@@ -1,0 +1,20 @@
+body{
+  background: #363636;
+  padding: 0;
+  margin: 0;
+  color: white;
+  animation-name: lolo;
+  animation-duration: 55s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.head{
+  text-align: center;
+  font-size: 200%;
+  background: black;
+  padding: 30px;
+  opacity: 0.5;
+}
+.text{
+  text-shadow: 5px 5px 8px white;
+}
