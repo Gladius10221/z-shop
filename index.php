@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script type="text/javascript" src = "js/jquery.js"></script>
   <script type="text/javascript" src = "js/body.js"></script>
+  <script type="text/javascript" src = "js/navbar.js"></script>
   <link rel="stylesheet" href="/style/style.css">
   <?php
   require "php/podval.php";
@@ -19,8 +20,10 @@
     <span class = "text">Z-shop</span>
   </div>
   <?php
+  echo '<div class = "fig">';
     navbar();
     body();
+    echo "</div>";
     podval();
   ?>
 </body>

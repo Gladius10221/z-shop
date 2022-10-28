@@ -1,10 +1,14 @@
 <style>
   .navbar{
+    margin-top: -50px;
     background: linear-gradient(black, grey, black);
     height: 50px;
     box-shadow: 1px 10px 40px black;
     padding-top: 10px;
     opacity: 0.8;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
   }
   #link{
     text-decoration: none;
@@ -16,8 +20,9 @@
     border-radius: 10px;
   }
   .link{
-    padding-top: 10px;
-    padding-left: 10px;
+margin-top: 10px;
+width: 100%;
+display: block;
   }
   #link:hover{
     color: black;
@@ -32,28 +37,67 @@
     margin-right: 30px;
     height: 30px;
     width: 60px;
+    display: block;
   }
   .but:hover{
   box-shadow: 0 0 10px white;
   }
   .button{
+    display: block;
     background: white;
     height: 30px;
     width: 30px;
     border-radius: 40px;
   }
+  .menus{
+    margin-left: 20px;
+    border-radius: 10px;
+    background: black;
+    width: 180px;
+    padding-left: 10px;
+    height: 300px;
+    paddin-top: 70px;
+    display: none;
+  }
+  .holovna{
+    margin-top: 20px;
+  }
+  .menu{
+    padding-left: 10px;
+    padding-top: 5px;
+    border-radius: 10px;
+    margin-top: -15px;
+    margin-left: 10px;
+    background: black;
+    display: block;
+    width: 120px;
+    height: 40px;
+    font-size: 30px;
+    opacity: 0.8;
+  }
+  .menu:hover{
+
+  }
 </style>
 
 <div class = "navbar">
   <div class="link">
-    <a href="#" id = "link">Головна</a>
-    <a href="#" id = "link">Пошук</a>
-    <a href="#" id = "link">Повідомлення</a>
-    <a href="#" id = "link">Профіль</a>
-    <a href="#" id = "link">Новини проекту</a>
+    <span class = menu>Меню</span>
   </div>
-  ккеаогуоеуенлоуенлокулнеокелн
-  <span class="but">
+  <div class="but">
     <div class = "button"></div>
-  </span>
+  </div>
+  <span class = "menus">
+    <p class = "holovna">
+<a href="#" id = "link">Головна</a>
+<p class = "holovna">
+<a href="#" id = "link">Пошук</a>
+<p class = "holovna">
+<a href="#" id = "link">Повідомлення</a>
+<p class = "holovna">
+<a href="#" id = "link">Профіль</a>
+<p class = "holovna">
+<a href="#" id = "link">Новини проекту</a>
+</p>
+</span>
   </div>
