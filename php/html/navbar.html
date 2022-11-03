@@ -30,6 +30,7 @@ display: block;
     box-shadow: 0 0 10px white;
   }
   .but{
+    cursor: pointer;
     border-radius: 10px;
     background: black;
     float: right;
@@ -63,29 +64,92 @@ display: block;
     margin-top: 20px;
   }
   .menu{
+    cursor: pointer;
     padding-left: 10px;
     padding-top: 5px;
     border-radius: 10px;
-    margin-top: -15px;
+    margin-top: -10px;
     margin-left: 10px;
-    background: black;
+    background: grey;
     display: block;
-    width: 120px;
-    height: 40px;
-    font-size: 30px;
-    opacity: 0.8;
+    width: 100px;
+    height: 35px;
+    font-size: 25px;
+    opacity: 0.6;
+    display: block;
   }
   .menu:hover{
-
+      box-shadow: 0 0 20px black;
   }
+.png{
+  display: block;
+  background-image: url(style/str.png);
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+@media screen and (max-width: 1100px){
+  .but{
+    display: none;
+  }
+}
+.buttons{
+  margin-right: 30px;
+  margin-top: -30px;
+  width: 200px;
+  display: block;
+  float: right;
+}
+.login{
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: black;
+  width: 40%;
+  border: 2px solid grey;
+  text-align: center;
+}
+.registration{
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: black;
+  text-align: center;
+  width: 50%;
+  float: right;
+  margin-top: -27px;
+  border: 2px solid grey;
+}
+.registration:hover{
+    box-shadow: 0 0 10px black;
+    color: black;
+    background: white;
+}
+.login:hover{
+  box-shadow: 0 0 10px black;
+  color: black;
+  background: white;
+}
 </style>
 
 <div class = "navbar">
   <div class="link">
-    <span class = menu>Меню</span>
+    <span class = menu>
+            Меню
+                    <div class="png"></div>
+    </span>
   </div>
   <div class="but">
     <div class = "button"></div>
+  </div>
+  <div class="buttons">
+    <div class="login">Ввійти</div>
+    <div class="registration">Реєстрація</div>
   </div>
   <span class = "menus">
     <p class = "holovna">

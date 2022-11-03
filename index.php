@@ -11,7 +11,8 @@
   <?php
   require "php/podval.php";
   require "php/body.php";
-  require "php/navbar.php"
+  require "php/navbar.php";
+  require "php/input_bloks.php";
   ?>
   <title>Z-shop</title>
 </head>
@@ -22,6 +23,7 @@
   <?php
   echo '<div class = "fig">';
     navbar();
+    input_bloks();
     body();
     echo "</div>";
     podval();

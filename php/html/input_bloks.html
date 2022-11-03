@@ -1,0 +1,107 @@
+<style>
+  .block_reg{
+    display: none;
+    opacity: 0.9;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 25%;
+    z-index: 4;
+    position: fixed;
+    width: 50%;
+    height: 60%;
+    background: black;
+  }
+  .block_log{
+    display: none;
+    opacity: 0.9;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 25%;
+    z-index: 4;
+    position: fixed;
+    width: 50%;
+    height: 60%;
+    background: black;
+  }
+  @media(max-width: 670px){
+    .block_log{
+      width: 100%;
+      height: 100%;
+      margin-left: 0;
+      margin-top: -120px;
+    }
+    .block_reg{
+      width: 100%;
+      height: 100%;
+      margin-left: 0;
+      margin-top: -120px;
+    }
+  }
+  .but_mint{
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: red;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 60px;
+    height: 20px;
+    float: right;
+  }
+  .but_mint:hover{
+    box-shadow: 0 0 10px red;
+  }
+  #form{
+     margin-top: 10%;
+  }
+ .inp{
+   cursor: pointer;
+   height: 40px;
+   width: 40%;
+   border-radius: 10px;
+   font-size: 20px;
+ }
+ .inp:hover{
+   box-shadow: 0 0 10px white;
+ }
+ #bt{
+   cursor: pointer;
+   background: black;
+   color: white;
+   border: 1px solid white;
+   width: 82px;
+   height: 30px;
+   border-radius: 10px;
+ }
+ #bt:hover{
+   background: white;
+   color: black;
+   border: 1px solid grey;
+   box-shadow: 0 0 10px white;
+ }
+ .text_inp{
+   font-size: 30px;
+   margin-bottom: 20px;
+ }
+</style>
+
+<div class="block_reg">
+  <div class="but_mint">X</div>
+  <form action="php/registration_system/registration.php" method="post" id = "form">
+    <div class = "text_inp">Реєстрація</div>
+    <input type="text" name = "name" id = "name" class = "inp" placeholder="Ім'я"> <p>
+    <input type="text" name = "mail" id = "mail" class = "inp" placeholder="Електронна пошта"><p>
+      <input type="password" name = "password" id = "mail" class = "inp" placeholder="Пароль"><p>
+    <button id = "bt">Відправити</button></p>
+  </form>
+</div>
+
+<div class="block_log">
+  <div class="but_mint">X</div>
+  <form action="php/registration_system/login.php" method="post" id = "form">
+    <div class = "text_inp">Вхід</div>
+    <input type="text" name = "mail" id = "mail" class = "inp" placeholder="Електронна пошта"><p>
+      <input type="password" name = "password" id = "mail" class = "inp" placeholder="Пароль"><p>
+    <button id = "bt">Відправити</button></p>
+  </form>
+</div>
