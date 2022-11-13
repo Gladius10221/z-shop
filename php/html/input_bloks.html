@@ -81,7 +81,27 @@
  }
  .text_inp{
    font-size: 30px;
-   margin-bottom: 20px;
+ }
+ .attantion_reg{
+   text-shadow: 0 0 10px red;
+   height: 30px;
+   color: red;
+   text-align: center;
+   font-size: 25px;
+   margin-bottom: 10px;
+ }
+ .attantion_log{
+   text-shadow: 0 0 10px red;
+   height: 30px;
+   color: red;
+   text-align: center;
+   font-size: 25px;
+   margin-bottom: 10px;
+ }
+ @media(max-width: 500px){
+   .inp{
+     width: 80%;
+   }
  }
 </style>
 
@@ -89,10 +109,11 @@
   <div class="but_mint">X</div>
   <form action="php/registration_system/registration.php" method="post" id = "form">
     <div class = "text_inp">Реєстрація</div>
+    <div class="attantion_reg"></div>
     <input type="text" name = "name" id = "name" class = "inp" placeholder="Ім'я"> <p>
     <input type="text" name = "mail" id = "mail" class = "inp" placeholder="Електронна пошта"><p>
-      <input type="password" name = "password" id = "mail" class = "inp" placeholder="Пароль"><p>
-    <button id = "bt">Відправити</button></p>
+      <input type="password" name = "password" id = "password" class = "inp" placeholder="Пароль"><p>
+    <button id = "bt" class = "bt" onclick = "return false;">Відправити</button></p>
   </form>
 </div>
 
@@ -100,8 +121,9 @@
   <div class="but_mint">X</div>
   <form action="php/registration_system/login.php" method="post" id = "form">
     <div class = "text_inp">Вхід</div>
+    <div class="attantion_log"></div>
     <input type="text" name = "mail" id = "mail" class = "inp" placeholder="Електронна пошта"><p>
-      <input type="password" name = "password" id = "mail" class = "inp" placeholder="Пароль"><p>
-    <button id = "bt">Відправити</button></p>
+      <input type="password" name = "password" id = "password" class = "inp" placeholder="Пароль"><p>
+    <button id = "bt" class = "bt">Відправити</button></p>
   </form>
 </div>
