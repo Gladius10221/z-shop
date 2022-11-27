@@ -54,6 +54,9 @@
   #form{
      margin-top: 10%;
   }
+  #form1{
+     margin-top: 10%;
+  }
  .inp{
    cursor: pointer;
    height: 40px;
@@ -74,6 +77,21 @@
    border-radius: 10px;
  }
  #bt:hover{
+   background: white;
+   color: black;
+   border: 1px solid grey;
+   box-shadow: 0 0 10px white;
+ }
+ #bt1{
+   cursor: pointer;
+   background: black;
+   color: white;
+   border: 1px solid white;
+   width: 82px;
+   height: 30px;
+   border-radius: 10px;
+ }
+ #bt:hover1{
    background: white;
    color: black;
    border: 1px solid grey;
@@ -107,7 +125,7 @@
 
 <div class="block_reg">
   <div class="but_mint">X</div>
-  <form action="php/registration_system/registration.php" method="post" id = "form">
+  <form action="# method="post" id = "form">
     <div class = "text_inp">Реєстрація</div>
     <div class="attantion_reg"></div>
     <input type="text" name = "name" id = "name" class = "inp" placeholder="Ім'я"> <p>
@@ -119,11 +137,11 @@
 
 <div class="block_log">
   <div class="but_mint">X</div>
-  <form action="php/registration_system/login.php" method="post" id = "form">
+  <form action="#" method="post" id = "form1">
     <div class = "text_inp">Вхід</div>
     <div class="attantion_log"></div>
-    <input type="text" name = "mail" id = "mail" class = "inp" placeholder="Електронна пошта"><p>
-      <input type="password" name = "password" id = "password" class = "inp" placeholder="Пароль"><p>
-    <button id = "bt" class = "bt">Відправити</button></p>
+    <input type="text" name = "mail1" id = "mail1" class = "inp" placeholder="Електронна пошта"><p>
+      <input type="password" name = "password1" id = "password1" class = "inp" placeholder="Пароль"><p>
+    <button id = "bt1" class = "bt1" onclick = "return false;">Відправити</button></p>
   </form>
 </div>

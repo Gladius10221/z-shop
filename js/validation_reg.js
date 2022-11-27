@@ -1,7 +1,7 @@
 $(function() {
-    $("#bt").click(function(e){
+    $(".bt").click(function(e){
       $.ajax({
-          url:     "js/php/validation.php",
+          url:     "js/php/validation_reg.php",
           type:     "POST",
           dataType: "html",
           data: $('#form').serialize(),
@@ -17,6 +17,9 @@ $(function() {
               if (result.mae == 1){
                 $('#mail').css({'border' : '1px solid red', "box-shadow" : "0 0 10px red"})
                 $('.attantion_reg').text("Заповніть всі поля!")
+              }else if (result.mae == 2){
+                $('#mail').css({'border' : '1px solid red', "box-shadow" : "0 0 10px red"})
+                $('.attantion_reg').text("Введіть коректну пошту")
               }else{
                 window.error2 = "1";
                 $('#mail').css({'border' : 'none', "box-shadow" : "none"})
@@ -30,25 +33,11 @@ $(function() {
               }
 
 
-              if (result.mae == 2){
-                $('#mail').css({'border' : '1px solid red', "box-shadow" : "0 0 10px red"})
-                $('.attantion_reg').text("Введіть коректну пошту!")
-                window.error2 = "2";
-              }
-              else{
-                $('#mail').css({'border' : 'none', "box-shadow" : "none"})
-                window.error2 = "1";
-              }
-
-
               if (window.error1 == 1 && window.error2 == 1 && window.error3 == 1){
                 $('#bt').attr('onclick', null);
                 $('.bt').click();
                 $('#bt').attr('class', null);
               }
-      	},
-      	error: function() {
-              $('#result_form').html('Ошибка. Данные не отправлены.');
       	}
    	});
 		}

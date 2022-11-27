@@ -1,5 +1,4 @@
 <?php
-require "rb/rb.php";
 $mail = $_POST['mail'];
 $password = $_POST['password'];
 ?>
